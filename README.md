@@ -19,6 +19,12 @@ npm run build
 
 Os arquivos gerados ficam em `dist/`.
 
+## Hospedar na Vercel
+
+Importe o repositório GitHub na Vercel, selecione a branch `main` e mantenha a raiz do projeto como diretório de origem. O arquivo `vercel.json` define o preset Vite, o comando `npm run build` e a saída `dist/`.
+
+Depois de definir o domínio definitivo, atualize em `index.html` as URLs absolutas de `canonical`, `og:image` e os dados estruturados. Atualize também `siteUrl` em `lib/clinic.ts`. Essas URLs ainda apontam para a hospedagem atual.
+
 ## Conteúdo e manutenção
 
 - `app/page.tsx`: seções e interações da página.
